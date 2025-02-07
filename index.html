@@ -1,0 +1,41 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Todo List</title>
+      <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+      <div class="container">
+        <h1>✨ Todo List</h1>
+
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-value" id="total-tasks">0</div>
+            <div class="stat-label">Total Tasks</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="completed-tasks">0</div>
+            <div class="stat-label">Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="pending-tasks">0</div>
+            <div class="stat-label">Pending</div>
+          </div>
+        </div>
+
+        <div class="todo-input-grid">
+          <input placeholder="What needs to be done?"
+            class="js-name-input name-input">
+          <input type="date"
+            class="js-due-date-input due-date-input">
+          <button onclick="addTodo()" class="add-todo-button">Add Task</button>
+        </div>
+
+        <div class="js-todo-list todo-grid"></div>
+      </div>
+
+      <script src="./index.js"></script>
+    </body>
+  </html>
